@@ -13,7 +13,7 @@
  ******************************************************************************/
 import { useCallback } from 'react';
 import { useConfigContext } from '@adobe/aem-core-cif-react-components';
-
+import config from '../App/config';
 /**
  * @param {Object}      props
  * @param {Function}    props.onSignOut - A function to call when sign out occurs.
@@ -55,18 +55,17 @@ export const useAccountMenuItems = props => {
             name: 'Account Information',
             id: 'accountMenu.accountInfoLink',
             url: pagePaths.accountDetails
+        },
+        {
+            name: 'Hello World ',
+            id: 'accountMenu.helloworldLink',
+            url: config.pagePaths.helloworld
         }
-    );
-
-    // Hide links until features are completed
-    // {
-    //     name: 'Saved Payments',
-    //     id: 'accountMenu.savedPaymentsLink',
-    //     url: '/saved-payments'
-    // }
-
+        
+    ); 
     return {
         handleSignOut,
         menuItems: MENU_ITEMS
     };
 };
+

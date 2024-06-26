@@ -67,7 +67,8 @@ export default {
         cartDetailsContainer: '.cartcontainer__body',
         checkoutPageContainer: '.checkoutpage__body',
         orderHistoryPageContainer: '.orderhistory__body',
-        wishlistPageContainer: '.wishlist__body'
+        wishlistPageContainer: '.wishlist__body',
+        helloworldPageContainer: '.helloworld'
     },
     pagePaths: {
         baseUrl,
@@ -76,6 +77,7 @@ export default {
         cartDetails: `${basePath}/cart-details.html`,
         checkoutPage: `${basePath}/checkout.html`,
         orderHistory: `${basePath}/my-account/order-history.html`,
-        wishlist: `${basePath}/my-account/wishlist.html`
+        wishlist: `${basePath}/my-account/wishlist.html`,
+        helloworld: `${basePath}/my-account/helloworld.html`
     }
 };

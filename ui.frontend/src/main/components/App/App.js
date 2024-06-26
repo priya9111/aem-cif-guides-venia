@@ -118,6 +118,14 @@ const App = props => {
                             </Portal>
                         </Route>
 
+                        <Route  path={pagePaths.helloworld}>
+                            <Portal selector={mountingPoints.helloworldPageContainer}>
+                                <helloworldPage />
+                            </Portal>
+                        </Route>
+
+                        
+
                         <Route path={pagePaths.checkoutPage}>
                             <Portal selector={mountingPoints.checkoutPageContainer}>
                                 <HeadProvider>
